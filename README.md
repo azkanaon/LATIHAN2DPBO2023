@@ -15,8 +15,37 @@ Buatlah program berbasis OOP menggunakan bahasa pemrograman C++, Java, Python, d
 
 ## Desain Program 
 ![image](https://user-images.githubusercontent.com/90915678/220288425-5ab4eb07-9c60-48d4-9d71-f7cb1e1d6ae9.png)
-### Sebelum menjelaskan apa apa saja yang terdapat pada gambar diatas, saya ingin menjelaskan mengenai alasan mengapa desain yang dibuat seperti gambar diatas
-
+### Alasan Desain
+Setelah membaca mengenai sivitas akademik, saya menemukan bahwa sivitas akademik merupakan kumpulan orang-orang, maka dari itu saya menyimpulkan bahwa sivitas akademik merupakan anak dari Human.
+Alasan saya memasangkan mahasiswa sebagai child dari sivitas akademik karena sivitas akademik terdiri dari mahasiswa, dosen, TU, dll sehingga sudah sangat jelas bahwa mahasiswa adalah bagian dari sivitas akademik.
+### Penjelasan Kelas
+- Class Human 
+  - Atribut :
+    - nik => nik orang
+    - nama => nama orang
+    - jenis kelamin => jenis kelamin orang
+  - Method :
+    - Human => Konstruktor
+    - get... => Memanggil nilai atribut
+    - set... => Assign nilai ke atribut
+   
+- Class Sivitas Akademik 
+  - Atribut :
+    - asalUniv => asalUniv orang
+    - emailEdu => email orang
+  - Method :
+    - SivitasAkademik => Konstruktor (disini saya juga memanggil variabel yang ada di parentnya)
+    - get... => Memanggil nilai atribut
+    - set... => Assign nilai ke atribut
+- Class Mahasiswa
+  - Atribut :
+    - nim => asalUniv orang
+    - prodi => email orang
+    - fakultas => fakultas orang
+  - Method :
+    - Mahasiswa => Konstruktor (disini saya juga memanggil variabel yang ada di parentnya, yang artinya memanggil parentnya si parent juga)
+    - get... => Memanggil nilai atribut
+    - set... => Assign nilai ke atribut
 
 ## Alur Program
 1. Berikan masukkan 
